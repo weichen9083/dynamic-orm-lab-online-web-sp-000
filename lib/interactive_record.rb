@@ -8,5 +8,10 @@ class InteractiveRecord
     self.to_s.downcase.pluralize
   end 
   
+  def self.column_names
+    name =  self.table_name
+    sql = "SELECT * FROM #{name} 
+  end 
+  
 
 end
