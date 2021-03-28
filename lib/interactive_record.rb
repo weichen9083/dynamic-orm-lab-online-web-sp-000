@@ -1,5 +1,6 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
+require 'pry'
 
 
 class InteractiveRecord
@@ -9,8 +10,11 @@ class InteractiveRecord
   end 
   
   def self.column_names
+     DB[:conn].results_as_hash = true 
     name =  self.table_name
-    sql = "SELECT * FROM #{name} WHERE 
+    binding.pry
+    
+    
   end 
   
 
