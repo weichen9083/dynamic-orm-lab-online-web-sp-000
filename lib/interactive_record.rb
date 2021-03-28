@@ -5,7 +5,7 @@ require 'active_support/inflector'
 class InteractiveRecord
   
   def self.table_name 
-    self.
+    self.to_s.downcase.
   end 
   
 
