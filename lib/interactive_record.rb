@@ -10,7 +10,7 @@ class InteractiveRecord
   
   def self.column_names
     name =  self.table_name
-    sql = "SELECT * FROM #{name} 
+    sql = "SELECT * FROM #{name} WHERE 
   end 
   
 
